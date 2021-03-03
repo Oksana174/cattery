@@ -53,12 +53,12 @@
 
         .slider__button--prev {
             left: 17%;
-            background-image: url('../../img/icons/arrow-left-long.svg');
+            background-image: url('../img/icons/arrow-left-long.svg');
         }
         
         .slider__button--next {
             right: 13.8%;
-            background-image: url('../../img/icons/arrow-right-long.svg');
+            background-image: url('../img/icons/arrow-right-long.svg');
         }
     }
 
@@ -71,12 +71,12 @@
         }
         .slider__button--prev {
             left: -4px;
-            background-image: url('../../img/icons/arrow-left.svg');
+            background-image: url('../img/icons/arrow-left.svg');
         }
         
         .slider__button--next {
             right: -2px;
-            background-image: url('../../img/icons/arrow-right.svg');
+            background-image: url('../img/icons/arrow-right.svg');
         }
     }
 }

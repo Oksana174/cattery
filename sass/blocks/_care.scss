@@ -1,28 +1,28 @@
 .care {
     background-color: $bg-black;
-    background-image: url('../../img/care-bg-desktop@1x.jpg');
+    background-image: url('../img/care-bg-desktop@1x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0;
 
     @media (min-resolution: 2dppx) {
-        background-image: url('../../img/care-bg-desktop@2x.jpg');
+        background-image: url('../img/care-bg-desktop@2x.jpg');
     }
 
     @media screen and (max-width: $tablet-width) {
-        background-image: url('../../img/care-bg-tablet@1x.jpg');
+        background-image: url('../img/care-bg-tablet@1x.jpg');
 
         @media (min-resolution: 2dppx) {
-            background-image: url('../../img/care-bg-tablet@2x.jpg');
+            background-image: url('../img/care-bg-tablet@2x.jpg');
         }
     }
 
     @media screen and (max-width: $mobile-width-only) {
-        background-image: url('../../img/care-bg-mobile@1x.jpg');
+        background-image: url('../img/care-bg-mobile@1x.jpg');
         background-size: cover;
 
         @media (min-resolution: 2dppx) {
-            background-image: url('../../img/care-bg-mobile@2x.jpg');
+            background-image: url('../img/care-bg-mobile@2x.jpg');
         }
     }
 }
@@ -181,7 +181,7 @@
         height: 100%;
         background-color:  $text-lead-color;
         border-left: 0.5px solid $text-lead-color;
-        background-image: url('../../img/icons/arrow-care.svg');
+        background-image: url('../img/icons/arrow-care.svg');
         background-repeat: no-repeat;
         background-position: center;
         transition: background-color 0.3s ease-out;

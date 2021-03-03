@@ -142,7 +142,7 @@
         width: 13.2%;
         height: 100%;
         background-color: inherit;
-        background-image: url('../../img/icons/icon-plus.svg');
+        background-image: url('../img/icons/icon-plus.svg');
         background-repeat: no-repeat;
         background-position: center;
         border-left: 0.5px solid $border-color;
@@ -156,7 +156,7 @@
 
     &--active-btn::after {
         background-color: $text-lead-color;
-        background-image: url('../../img/icons/activeQuestion.svg');
+        background-image: url('../img/icons/activeQuestion.svg');
     } 
 
     &--active-btn:hover::after {
