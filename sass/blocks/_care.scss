@@ -1,0 +1,236 @@
+.care {
+    background-color: $bg-black;
+    background-image: url('../../img/care-bg-desktop@1x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url('../../img/care-bg-desktop@2x.jpg');
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        background-image: url('../../img/care-bg-tablet@1x.jpg');
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../../img/care-bg-tablet@2x.jpg');
+        }
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        background-image: url('../../img/care-bg-mobile@1x.jpg');
+        background-size: cover;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../../img/care-bg-mobile@2x.jpg');
+        }
+    }
+}
+
+.care__wrapper {
+    padding: 84px 0 55px;
+    margin: 0 auto;
+
+    @media screen and (max-width: $tablet-width) {
+        padding-top: 90px;
+        padding-bottom: 77px;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        padding-top: 53px;
+        padding-bottom: 31px;
+    }
+}
+
+.care__title {
+    margin-bottom: 49px;
+
+    @media screen and (max-width: $tablet-width) {
+        margin-bottom: 39px;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        margin: 0 auto;
+        margin-bottom: 34px;
+        max-width: 75%;
+    }
+}
+
+.care__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 96%;
+
+    @media screen and (max-width: $tablet-width) {
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(9px);
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        width: 100%;
+        transform: translateX(0);
+    }
+}
+
+.care__item {
+    max-width: 48.2%;
+    margin-right: auto;
+    margin-bottom: 3.7%;
+
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    &--earsandeyes {
+        a {
+            padding-top: 34px;
+        }
+    }
+
+    &--food {
+        a {
+            padding-top: 37px;
+            padding-left: 58px;
+        };
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        max-width: 559px;
+        margin-right: 0;
+        margin-bottom: 23px;
+
+        &--wool {
+            order: 0;
+        }
+
+        &--claws {
+            order: 2;
+        }
+
+        &--earsandeyes {
+            order: 1;
+            padding-top: 2px;
+
+            a {
+                padding-top: 33px;
+                padding-right: 24%;
+            }
+        }
+
+        &--food {
+            order: 3;
+            a {
+                padding-left: 48px;
+                padding-bottom: 28px;
+            };
+        }
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        max-width: 290px;
+        margin-bottom: 29px;
+
+        &--earsandeyes {
+            a {
+                padding-top: 21px;
+                padding-right: 19%;
+            }
+        }
+
+        &--food {
+            a {
+                padding-left: 23px;
+                padding-top: 23px;
+                padding-bottom: 17px;
+            };
+        }
+
+        &--claws {
+            a {
+                padding-top: 22px;
+                padding-right: 30%;
+            }
+        }
+    }
+}
+
+.care__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 165px;
+    padding: 38px 0 21px 57px;
+    padding-right: 19%;
+    cursor: pointer;
+    border: 0.5px solid $text-lead-color;
+    transition: background-color 0.3s ease-out;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 10.7%;
+        height: 100%;
+        background-color:  $text-lead-color;
+        border-left: 0.5px solid $text-lead-color;
+        background-image: url('../../img/icons/arrow-care.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-color 0.3s ease-out;
+    }
+
+    
+    &:hover,
+    &:hover::after {
+        background-color: $bg-black;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        min-height: 168px;
+        padding-top: 39px;
+        padding-bottom: 26px;
+        padding-left: 48px;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        min-height: 152px;
+        padding: 22px 18% 17px 23px;
+
+        &::after {
+            width: 15.6%;
+        }
+    }
+}
+
+.care__link-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    color: $text-lead-color;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: $mobile-width-only) {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+}
+
+.care__link-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 23px;
+    color: $white-color;
+
+    @media screen and (max-width: $mobile-width-only) {
+        line-height: 20px;
+    }
+}

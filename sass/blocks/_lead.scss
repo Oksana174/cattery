@@ -1,0 +1,10 @@
+.lead {
+    margin: 0;
+    text-align: center;
+    color: $text-lead-color;
+
+    @media screen and (max-width: $mobile-width-only) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

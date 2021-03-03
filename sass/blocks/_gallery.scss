@@ -1,0 +1,115 @@
+.gallery {
+    display: none;
+    
+    &--show {
+        display: block;
+    }
+}
+
+.gallery__list {
+    width: 100%;
+    height: auto;
+    max-width: 1068px;
+    height: auto;
+    margin: 0 auto;
+    column-count: 2;
+    column-gap: 25px;
+
+    @media screen and (max-width: $tablet-width) {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vw;
+        max-height: 495px;
+        column-count: 1;
+        column-gap: 0;
+        overflow: hidden;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        overflow: visible;
+        height: 100%;
+    }
+}
+
+.gallery__item {
+    display: block;
+    flex-shrink: 1;
+    line-height: 0;
+    overflow: hidden;
+    width: 100%;
+
+    &--top {
+        max-width: 519px;
+        height: 214px;
+        margin-bottom: 30px;
+    }
+    &--bottom {
+        max-width: 519px;
+        height: 241px;
+    }
+    &--large {
+        width: calc(100% - 30px);
+        max-width: 474px;
+        height: 485px;
+        margin-left: 8px;
+        img {
+            object-position: center bottom;
+        }
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        flex-shrink: 0;
+        display: block;
+        width: calc(100% / 2);
+        height: 200px;
+
+
+        &--top {
+            margin-bottom: 0;
+        }
+
+        &--active {
+            position: absolute;
+            top: 0;
+            left: 49%;
+            transform: translateX(-50%);
+            z-index: 5;
+            width: 474px;
+            height: 495px;
+        }
+
+        &--large {
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        width: 100%;
+        height: 78.125vw;
+        max-height: 450px;
+        display: none;
+
+        &--active {
+            display: block;
+            position: relative;
+        }
+
+        &--large {
+            margin-left: 2px;
+        }
+    }
+}
+
+.gallery__item-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    @media screen and (max-width: $mobile-width-only) {
+        object-fit: cover;
+    }
+}

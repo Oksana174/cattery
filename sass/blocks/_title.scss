@@ -1,0 +1,14 @@
+.title {
+    margin: 0;
+    font-family: 'Yeseva One', 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    @media screen and (max-width: $mobile-width-only) {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}

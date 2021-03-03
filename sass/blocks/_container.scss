@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    max-width: 1286px;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    @media screen and (max-width: $tablet-width) {
+        width: auto;
+        padding: 0 29px;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        padding: 0 15px;
+    }
+}

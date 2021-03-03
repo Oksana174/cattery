@@ -1,0 +1,17 @@
+.button {
+    display: block;
+    width: 200px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: $white-color;
+    border: 0.5px solid $color-border-btn;
+    text-align: center;
+    cursor: pointer;
+
+    @media screen and (max-width: $mobile-width-only) {
+        width: 141px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

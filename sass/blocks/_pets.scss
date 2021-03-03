@@ -1,0 +1,206 @@
+.pets {
+    background-color: $main-black;
+}
+
+.pets__wrapper {
+    margin: 0 auto;
+    padding-top: 223px;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: $tablet-width) {
+        padding-top: 101px;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        padding-top: 53px;
+        padding-bottom: 18px;
+    }
+}
+
+.pets__title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: $mobile-width-only) {
+        margin-bottom: 22px;
+    }
+}
+
+.pets__lead {
+    max-width: 523px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+
+    @media screen and (max-width: $tablet-width) {
+        margin-bottom: 47px;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        margin-bottom: 32px;
+    }
+}
+
+.pets__tabs-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 22%;
+    margin-bottom: 45px;
+    padding-right: 13px;
+
+    @media screen and (max-width: $tablet-width) {
+        width: 37%;
+        margin-bottom: 39px;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        max-width: 300px;
+        width: 81%;
+        padding-right: 0;
+        justify-content: center;
+        margin-bottom: 34px;
+    }
+} 
+
+.pets__item {
+    color: $black-opacity;
+
+    &--active {
+        color: $white-color;
+    }
+
+    &:not(:last-child) {
+        margin-right: auto;
+    
+        @media screen and (max-width: $mobile-width-only) {
+            margin-right: 45px;
+        }
+    }
+}
+
+.pets__tab {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: inherit;
+    transition: color 0.3s ease-out;
+    cursor: pointer;
+
+    &:hover:not(.pets__tab--active) {
+        color: $white-color;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.pets__slider {
+    width: 100%;
+    padding-left: 18px;
+
+    @media screen and (max-width: $tablet-width) {
+        padding-left: 0;
+    }
+}
+
+.pets__slider-content  {
+    position: relative;
+    width: 89.1%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+
+    @media screen and (max-width: $tablet-width) {
+        width: 100%;
+        margin-bottom: 53px;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        margin-bottom: 45px;
+    }
+}
+
+.pets__slider-wrapper {
+    @media screen and (max-width: $tablet-width) {
+        padding-left: 5.8%;
+        padding-right: 9.2%;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        padding: 0;
+        width: calc(100% - 56px);
+        max-width: 474px;
+        margin: 0 auto;
+    }
+}
+
+.pets__slider-btn {
+    display: none;
+    margin: 0;
+    z-index: 5;
+    width: 14px;
+    height: 31px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--prev,
+    &--next {
+        position: absolute;
+        top: 47%;
+    }
+
+    &--prev {
+        left: 0;
+        background-image: url('../../img/icons/arrow-left.svg');
+    }
+
+    &--next {
+        right: 0;
+        background-image: url('../../img/icons/arrow-right.svg');
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        display: block;
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        width: 14px;
+        height: 18px;
+    }
+}
+
+.pets__btn {
+    margin: 0 auto 28px;
+    padding: 17px 14px 16px;
+    transform: translateX(-10px);
+    transition: color 0.3s ease-out, border 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+        color: #a07b50;
+        border: 1px solid #ffffff;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        padding: 19px 14px 18px 15px;
+        transform: translateX(-2px);
+    }
+
+    @media screen and (max-width: $mobile-width-only) {
+        padding: 13px 15px 12px 12px;
+    }
+}
